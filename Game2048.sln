@@ -4,14 +4,33 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.28010.2041
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainAppWPF", "MainAppWPF\MainAppWPF.csproj", "{97928D73-249F-429F-B17B-28E0C25B33D7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{136DA514-F78A-4693-BE38-93F8327831A3} = {136DA514-F78A-4693-BE38-93F8327831A3}
+		{01616D5E-69DC-4CBB-9530-10F58551E7D9} = {01616D5E-69DC-4CBB-9530-10F58551E7D9}
+		{9A6474FD-4824-4843-ACD9-F5E19E39A589} = {9A6474FD-4824-4843-ACD9-F5E19E39A589}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmLibrary", "MvvmLibrary\MvvmLibrary.csproj", "{9A6474FD-4824-4843-ACD9-F5E19E39A589}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{4D0F6D1D-E4A9-429D-88BC-6670F1E9FC7C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AI2048Library", "AI2048Library\AI2048Library.csproj", "{01616D5E-69DC-4CBB-9530-10F58551E7D9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{136DA514-F78A-4693-BE38-93F8327831A3} = {136DA514-F78A-4693-BE38-93F8327831A3}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game2048", "Game2048\Game2048.csproj", "{136DA514-F78A-4693-BE38-93F8327831A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game2048.Tests", "Game2048.Tests\Game2048.Tests.csproj", "{CECA83B8-9621-4A15-A785-FE414B36B06A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{136DA514-F78A-4693-BE38-93F8327831A3} = {136DA514-F78A-4693-BE38-93F8327831A3}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AI2048Library.Tests", "AI2048Library.Tests\AI2048Library.Tests.csproj", "{C921B31D-5CBC-4855-9F16-F9B68BA7B6D5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{136DA514-F78A-4693-BE38-93F8327831A3} = {136DA514-F78A-4693-BE38-93F8327831A3}
+		{01616D5E-69DC-4CBB-9530-10F58551E7D9} = {01616D5E-69DC-4CBB-9530-10F58551E7D9}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,9 +54,21 @@ Global
 		{136DA514-F78A-4693-BE38-93F8327831A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{136DA514-F78A-4693-BE38-93F8327831A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{136DA514-F78A-4693-BE38-93F8327831A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CECA83B8-9621-4A15-A785-FE414B36B06A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CECA83B8-9621-4A15-A785-FE414B36B06A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CECA83B8-9621-4A15-A785-FE414B36B06A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CECA83B8-9621-4A15-A785-FE414B36B06A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C921B31D-5CBC-4855-9F16-F9B68BA7B6D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C921B31D-5CBC-4855-9F16-F9B68BA7B6D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C921B31D-5CBC-4855-9F16-F9B68BA7B6D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C921B31D-5CBC-4855-9F16-F9B68BA7B6D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CECA83B8-9621-4A15-A785-FE414B36B06A} = {4D0F6D1D-E4A9-429D-88BC-6670F1E9FC7C}
+		{C921B31D-5CBC-4855-9F16-F9B68BA7B6D5} = {4D0F6D1D-E4A9-429D-88BC-6670F1E9FC7C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {915A5D75-BD83-4FF7-9C8C-D178D9CB14BB}
