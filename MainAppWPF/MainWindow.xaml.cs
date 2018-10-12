@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Game2048WPF
+namespace MainAppWPF
 {
 	/// <summary>
 	/// Логика взаимодействия для MainWindow.xaml
