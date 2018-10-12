@@ -1,0 +1,17 @@
+﻿<Window x:Class="MvvmLibrary.Windows.MainWindow" 
+        x:ClassModifier="internal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:local="clr-namespace:MvvmLibrary.Windows"
+        mc:Ignorable="d" 
+        Title="{Binding Path=Title}"
+        Width="735" Height="600"
+        MinWidth="735" MinHeight="600"
+        WindowStartupLocation="CenterScreen" 
+        Closing="Window_Closing">
+    <Grid>
+
+    </Grid>
+</Window>
